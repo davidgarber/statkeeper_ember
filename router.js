@@ -1,5 +1,7 @@
 Statkeeper.Router.map(function() {
   this.resource('teams');
   this.resource('new-team');
-  this.resource('team', {path: 'teams/:team_id'});
+  this.resource('team', {path: 'teams/:team_id'}, function() {
+    this.resource('new-player');
+  });
 });

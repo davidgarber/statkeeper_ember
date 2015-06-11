@@ -1,3 +1,4 @@
 Statkeeper.Team = DS.Model.extend({
-  name: DS.attr()
+  name: DS.attr(),
+  players: DS.hasMany('player', {async: true})
 });
