@@ -3,10 +3,16 @@ Statkeeper.NewPlayerController = Ember.Controller.extend({
   actions: {
     save: function() {
       var newPlayer = this.store.createRecord('player', {
-        playername: this.get('playername')
+        playername: this.get('playername'),
+        missedshots: 0,
+        madeshots: 0,
+        assists: 0,
+        rebounds: 0,
+        shotpercentage: 0
       });
 
       newPlayer.save();
+      
       var team = this.get('controllers.team.model');
       team.get('players').pushObject(newPlayer);
       team.save();

@@ -1,1 +1,11 @@
 <h3>{{playername}} stats:</h3>
+
+<p>Made Shots: {{madeshots}}  <button class="btn btn-primary" {{action 'madeshots'}}>Made Shot</button>
+</p>
+<p>Missed Shots: {{missedshots}}  <button class="btn btn-primary" {{action 'missedshots'}}>Missed Shot</button>
+</p>
+<p>Assists: {{assists}}  <button class="btn btn-primary" {{action 'assists'}}>Assist</button>
+</p>
+<p>Rebounds: {{rebounds}}  <button class="btn btn-primary" {{action 'rebounds'}}>Rebound</button>
+</p>
+<p>Shot Percentage: {{madeshots / (missedshots + madeshots)}}</p>
