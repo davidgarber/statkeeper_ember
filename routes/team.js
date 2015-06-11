@@ -1,5 +1,5 @@
-Statkeeper.TeamRoutes = Ember.Route.extend({
+Statkeeper.TeamRoute = Ember.Route.extend({
   model: function(params) {
-    return this.store.find('team', params.team_id)
+    return this.store.find('team', params.team_id);
   }
 });

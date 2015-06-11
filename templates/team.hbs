@@ -2,7 +2,7 @@
 
 <ul>
   {{#each player in this.players}}
-    {{player.playername}}
+    <li>{{#link-to 'player' player.id}}{{player.playername}}{{/link-to}}</li>
   {{/each}}
 </ul>
 

@@ -9,4 +9,4 @@ Statkeeper.NewTeamController = Ember.Controller.extend({
       this.transitionToRoute('teams');
     }
   }
-})
+});

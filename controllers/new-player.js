@@ -11,8 +11,23 @@ Statkeeper.NewPlayerController = Ember.Controller.extend({
       team.get('players').pushObject(newPlayer);
       team.save();
 
-
       this.transitionToRoute('team', team.id);
     }
   }
-})
+});
+
+
+// Statkeeper.NewPlayerController = Ember.ObjectController.extend ({
+//   actions: {
+//     save: function() {
+//       var newPlayer = this.get('model');
+//       newPlayer.save();
+//
+//       var controller = this;
+//       newPlayer.get('player').then(function(player) {
+//         player.save();
+//         controller.transitionToRoute('player', player);
+//       });
+//     }
+//   }
+// });
