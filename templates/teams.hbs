@@ -1,7 +1,7 @@
-<h1>These teams are ballin right now</h1>
+<h1>These teams are ballin so hard</h1>
 
 <ul>
   {{#each}}
-    <li>{{name}}</li>
+    <li>{{#link-to 'team' this.id}}{{name}}{{/link-to}}</li>
   {{/each}}
 </ul>
